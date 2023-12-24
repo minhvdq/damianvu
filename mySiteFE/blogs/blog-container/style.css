@@ -40,7 +40,7 @@ body{
 }
 
 .other{
-    padding-top: 20vh;
+    padding-top: 10vh;
     width: 100%;
 }
 
@@ -56,7 +56,7 @@ body{
         z-index: 1;
         background-color: #554444;
         position: fixed ;
-        top: 0; right: 0; bottom: 85%; left: 0;
+        top: 0; right: 0; bottom: 90%; left: 0;
     }
     
     #blogName {
@@ -65,7 +65,7 @@ body{
         float: left;
         margin-left: 6vh;
         margin-right: 20vh;
-        margin-top: 3vh;
+        margin-top: 1.5vh;
     }
     .taskbar a {
         float: right;   
@@ -75,8 +75,8 @@ body{
 
         padding-left: 6vw;
         padding-right: 6vw;
-        padding-top: 5vh;
-        padding-bottom: 6vh;
+        padding-top: 3vh;
+        padding-bottom: 4vh;
         border-color: black;
 
         text-decoration: none;
