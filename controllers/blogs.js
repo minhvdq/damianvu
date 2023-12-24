@@ -16,7 +16,8 @@ blogsRouter.post('/', async (request, response) => {
     const newBlog = new Blog ({
         title: request.body.title,
         date: request.body.date,
-        link: request.body.link
+        link: request.body.link,
+        description: request.body.description
 
     })
     savedBlog = await newBlog.save()
