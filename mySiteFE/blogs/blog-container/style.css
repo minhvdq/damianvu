@@ -42,7 +42,28 @@ body{
 .other{
     padding-top: 10vh;
     width: 100%;
+    margin-bottom: 200px;
 }
+
+.other h1{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+img{
+    width: 100vw;
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+footer img{
+
+    width: 10vw;
+}
+
 
 
 
@@ -89,9 +110,42 @@ body{
     .taskbar a:hover{
         color: black 
     }
+
+    .other h1{
+        margin-top: 300px;
+        margin-bottom: 200px;
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
     .other{
         margin-left: 20vw;
         margin-right: 20vw;
+        margin-bottom: 400px;
         width: 60vw;
+    }
+
+    img{
+        margin-left: 5vw;
+        width: 50vw;
+    }
+    i{
+        display: block;
+        margin-left: 5px;
+    }
+    footer img{
+        margin-left: 1vw;
+        margin-right: 1vw;
+        width: 3vw;
     }
 }
