@@ -81,6 +81,7 @@ footer img{
     }
     
     #blogName {
+        font-size: 4vh;
         text-align: center;
         display: block;
         float: left;
