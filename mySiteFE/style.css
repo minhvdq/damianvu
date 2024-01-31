@@ -99,6 +99,9 @@ body{
         margin-right: 20vh;
         margin-top: 1.5vh;
     }
+    .welcome{
+        font-size : 5vw;
+    }
     .taskbar a {
         float: right;   
         -webkit-appearance: button;
