@@ -64,7 +64,7 @@ object{
     }
     
     #blogName {
-        font-size: 4vh;
+        font-size : 4vh;
         text-align: center;
         display: block;
         float: left;
@@ -87,6 +87,9 @@ object{
         text-decoration: none;
         color: white;
         font-size: 2.5vh;
+    }
+    footer{
+        height: 5vh;
     }
     #current{
         background-color: #4C4040 
