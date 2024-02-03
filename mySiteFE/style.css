@@ -1,67 +1,95 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background-color: #D9D9D9 ;
+    background-color: #D9D9D9;
+    z-index: -1;
+    height: 100%;
     overflow-x: hidden;
 }
-#buttons{
-    z-index: 1;
-    background-color: grey;
+#header{
+    margin: 0;
+    padding:0;
+    height: 100vh;
+    background-image: url('./image/gettysburg.jpeg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center
+}
+.taskbar{
     display: none;
-    position: absolute;
-    width: 20%;
-    top: 10%; right: 10%;
-}
-.phone-taskbar a {
-    align-items: center;   
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    text-decoration: none;
-    color: black;
-    font-size: 2.5vh;
-}
-.phone-taskbar a:hover{
-    color: white;
 }
 #option-button{
+    margin-right: 2vw;
     z-index: 1;
     width: 7vw;
     position: relative;
     float: right;
     margin-top: 3.5vh;
 }
-.phone-taskbar h1{
-    position: relative;
-    float: left;
-    font-size: 30px;
+.icon{
+    margin-left: 1vh;
+    margin-right: 1vh;
+    width: 4vh;
+    height: 4vh;
 }
-.welcome {
-    display: block;
+.welcome{
+    position: absolute;
+    top :45%;
+    left: 13%;
+    margin:0;
+    font-size: 4.7vw;
     text-align: center;
-    position: relative;
-    padding-top: 50vh;
-    height: 100vh;
-    font-size: 6vw;
+    vertical-align: middle;
+    color: white;
+    filter: drop-shadow(10px 10px 4px black);
+    font-family: 'Inter';
 }
-.info {
-    position: relative;
+.phone-taskbar h1{
+    margin: 0;
+    width: 30vw;
+    padding-top: 4vh;
+    font-family: 'Inria Serif';
+    color: whitesmoke;
+    font-size : 2.5vh;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+#buttons{
+    z-index: 1;
+    background-color: grey;
+    display: none;
+    position: absolute;
+    width: 20%;
+    top: 5%; right: 10%;
 }
 .introText {
-    padding: 2vw auto;
+    padding: 2vw 2vw;
 
 }
 .minh{ 
+
+    border-radius: 50%;
     align-items: center;
-    width: 100%;
+    width: 80%;
     margin-top: 10vh;
-    filter: drop-shadow(30px 10px 4px grey);
 }
 
 .contact{
+    background-color: #1E1E1E;
     text-align: center;
     font-size: 5vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     margin-top: 20vh;
-    padding-bottom: 20vh;
+}
+
+.contact p {
+    color: white;
 }
 
 .taskbar{
@@ -77,84 +105,125 @@ body{
     width: 4vh;
     height: 4vh;
 }
-
+.other{
+    padding-top: 20%;
+    position: relative;
+}
+.images{
+    padding-left: 15%;
+}
+#more{
+    display: block;
+}
+#less{
+    display: none;
+}
+#moreInfo{
+    display: none;
+}
 @media only screen and (min-width: 1000px) {
+
+    .taskbar{
+        display: block;
+    }
+    .taskbar a:hover{
+        color: black;
+    }
     .phone-taskbar{
         display: none;
     }
-    .taskbar {
-        display: block;
+    #header{
+        margin: 0;
+        padding:0;
+        height: 100vh;
+        background-image: url('./image/gettysburg.jpeg');
+        background-size:     cover;                      /* <------ */
+        background-repeat:   no-repeat;
+        background-position: center center
+
+    }
+
+    .taskbar a{
         z-index: 1;
-        background-color: #554444;
-        position: fixed ;
-        top: 0; right: 0; bottom: 90%; left: 0;
-    }
-    
-    #blogName {
-        font-size: 4vh;
-        text-align: center;
-        display: block;
-        float: left;
-        margin-left: 6vh;
-        margin-right: 20vh;
-        margin-top: 1.5vh;
-    }
-    .welcome{
-        font-size : 5vw;
-    }
-    .taskbar a {
         float: right;   
         -webkit-appearance: button;
         -moz-appearance: button;
         appearance: button;
 
-        padding-left: 6vw;
-        padding-right: 6vw;
-        padding-top: 3vh;
-        padding-bottom: 4vh;
+        margin-top: 2vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        border-right: solid;
         border-color: black;
 
         text-decoration: none;
         color: white;
         font-size: 2.5vh;
     }
-    #current{
-        background-color: #4C4040 
-    }
-    .taskbar a:hover{
-        color: black 
-    }  
 
-    .info {
-        position: relative;
-        margin-bottom: 40vh;
-    }
-    .introText {
-        padding-left: 50pt;
-        padding-right: 50pt;
+    #blogName{
+        margin: 0;
+        width: 20vw;
+        padding-top: 2vh;
+        font-family: 'Inria Serif';
+        color: whitesmoke;
+        font-size : 4vh;
+        text-align: center;
+        display: block;
         float: left;
-        width: 40%;
-        font-size: 4vh;
-        margin-left: 8vh;
+        filter: drop-shadow(10px 10px 4px black);
+    }
+    .welcome{
+        position: absolute;
+        top :45%;
+        left: 13%;
+        margin:0;
+        font-size: 4.7vw;
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+        filter: drop-shadow(10px 10px 4px black);
+        font-family: 'Inter';
+    }
+    .minh{
+        margin: 0;
+        display: block;
+        float: right;
+        width: 70%;
+    }
+    .introText{
+        padding-top: 2vh;
+        padding-right: 5%;
+        width: 50%;
+        float: right;
+    }
+    .introText h1{
+        text-align: left;
+    }
+    .introText p{
+        font-family: 'Inter';
+        font-size: 3vh;
     }
     .images{
-        text-align: center;
-        float:right;
-        margin-right: 10vh;
-        margin-bottom: 10vh;
-        width: 30%;
-        font-size: 10px;
+        padding: 0;
+        float: left;
+        width: 40%;
+    }
+    .info{
+        height: 50vh;
     }
     .contact{
-        font-size: 20px;
-        margin-top: 0;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        margin-top: 20vh;
     }
-    .minh{ 
-        width: 100%;
-        margin-top: 0;
-        filter: drop-shadow(30px 10px 4px grey);
+
+    .contact p{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        font-size: 3vh;
     }
-    .email{
-        font-size: 1.5vw;
+    .contact a{
+        font-size: 3vh;
     }
 }

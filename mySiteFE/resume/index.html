@@ -6,35 +6,53 @@
     <meta name="author" content="Damian Vu" >
     <meta name="description" content="welcome! this is my current Resume">
     <title> Resume-Minhvdq </title>
-    <link href = "./style.css" rel = "stylesheet"  />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inria Serif' rel='stylesheet'>
+    <link href = "../style.css" rel = "stylesheet"  />
+    <link href = "./style-resume.css" rel = "stylesheet"  />
     <link rel="icon" type="image/x-icon" href="../image/icon.ico">
-    <script src = "./main.js" defer></script>
+    <script src = "../main.js" defer></script>
   </head>
   <body>
-    <div class="taskbar">
-      <h1 id="blogName">Damian Vu</h1>
-      <a href="/">SECRET</a>
-      <a href="../blogs">BLOGS</a>
-      <a id="current" href="./">RESUME</a>
-      <a href="..">HOME</a>
-    </div>
-    <div class="phone-taskbar">
-      <h1>Damian Vu</h1>
-      <div id="buttons">
+    <div id="header">
+      <div class = "taskbar">
+        <h1 id="blogName">Damian Vu</h1>
         <a href="./">SECRET</a>
         <a href="../blogs">BLOGS</a>
         <a id="current" href="./">RESUME</a>
         <a href="..">HOME</a>
       </div>
-      <img id="option-button" src="../image/option.png" alt="option-button" />
+      <h1 class="welcome" >
+        MY RESUME
+      </h1>
+      <div class="phone-taskbar">
+        <h1>Damian Vu</h1>
+        <div id="buttons">
+          <a href="./">SECRET</a>
+          <a href="../blogs">BLOGS</a>
+          <a id="current" href="./">RESUME</a>
+          <a href="..">HOME</a>
+        </div>
+        <img id="option-button" src="../image/option.png" alt="option-button" />
+      </div>
     </div>
     <div class = "other">
-      <h1 style="text-align: center;"> My Resume</h1>
       <p> You can download here: <a href="./resumePDF/resume.pdf">Download</a> </p>
       <object data="./resumePDF/resume.pdf" type="application/pdf">
         <p>Unable to display pdf file <a href="./resumePDF/resume.pdf">Download</a> instead</p>
       </object>
     </div>
-    <footer></footer>
+    <div class="contact">
+      <p> Contact:</p>
+      <a class = "ctinf" id = "github" href = "https://linkedin.com/in/minh-vu-a0617225a/"  target = _blank><img class="icon" src="../image/linkedin.png" /></a>
+      <a class = "ctinf" id = "facebook" href = "https://facebook.com/minhvdq"  target = _blank><img class="icon" src = "../image/facebook.png"/></a>
+      <a class = "ctinf" id = "github" href = "https://instagram.com/minhvdq"  target = _blank><img class="icon" src = "../image/inslogo.png"/></a>
+      <p id="more">more</p>
+      <p id="less">less</p>
+      <div id="moreInfo">
+        <a class="email" href="mailto:vudimi01@gettysburg.edu">vudimi01@gettysburg.edu</a>
+        <a class= "email" href="https://github.com/minhvdq/" target="_blank">Github</a>
+      </div>
+    </div>  
   </body>
 </html>

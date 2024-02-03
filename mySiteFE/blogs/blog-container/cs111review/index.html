@@ -6,31 +6,38 @@
         <meta name="author" content="Damian Vu" >
         <meta name="description" content="first blog review my cs111 at Gettysburg College" >
         <title> cs111 review</title>
-        <link rel="icon" type="image/x-icon" href="../image/icon.ico">
-        <link rel="stylesheet" href="../style.css" />
-        <script src="../main.js" defer></script>
+        <link rel="icon" type="image/x-icon" href="../../../image/icon.ico">
+        <link rel="stylesheet" href="../../../style.css" />
+        <script src="../../../main.js" defer></script>
+        <link rel="stylesheet" href="../style-blog.css" />
     </head>
     <body>
-        <div class="taskbar">
-            <h1 id="blogName">Damian Vu</h1>
+      <div id="header">
+        <div class = "taskbar">
+          <h1 id="blogName">Damian Vu</h1>
+          <a href="./">SECRET</a>
+          <a href="../../">BLOGS</a>
+          <a href="../../../resume/">RESUME</a>
+          <a href="../../../">HOME</a>
+        </div>
+        <div class="title">
+          <h1 >
+            COMPUTER SCIENCE 111 AT GETTYSBURG COLLEGE
+          </h1>
+          <i style="font-size: 15px; margin-bottom: 10px;">Posted on: 12/24/2023</i>
+        </div>
+        <div class="phone-taskbar">
+          <h1>Damian Vu</h1>
+          <div id="buttons">
             <a href="./">SECRET</a>
-            <a href="../../">BLOGS</a>
-            <a href="../../../resume/">RESUME</a>
-            <a href="../../..">HOME</a>
+            <a id="current" href="./">BLOGS</a>
+            <a href="../resume/">RESUME</a>
+            <a href="..">HOME</a>
           </div>
-          <div class="phone-taskbar">
-            <h1>Damian Vu</h1>
-            <div id="buttons">
-              <a href="/">SECRET</a>
-              <a id="current" href="/">BLOGS</a>
-              <a href="../../../resume/">RESUME</a>
-              <a href="../">HOME</a>
-            </div>
-            <img id="option-button" src="../image/option.png" alt="option-button" />
-          </div>
+          <img id="option-button" src="./image/option.png" alt="option-button" />
+        </div>
+      </div>
         <div class="other">
-            <h1>COMPUTER SCIENCE 111 AT GETTYSBURG COLLEGE </h1>
-            <i style="font-size: 15px; margin-bottom: 10px;">Posted on: 12/24/2023</i>
             <p>I just finished my first Computer Science class( Cs111) with Professor Ilinkin at Gettysburg last December. The class indeed is a perfect one as an introductory to Programming Language (Java). Even though it was not my first time learning Computer Science, I found the class interesting and reinforced what I have known. </p>
             <h2>I. Class Concepts:</h2>
             <p>The class uses Dr. Java as the IDE for in-class work and homework. DrJava is beginner-friendly and created by the JavaPLT group at Rice University. The tools are designed so that class work outcomes are Android-like projects that are implemented on an Android Emulator (No knowledge of Android needed - using custom library canvas <a href="http://www.cs.gettysburg.edu/~ilinkin/cs1android/javadoc/cs1/android/canvas.html">here</a> ). For more information, read Professor Ilinkin's papers <a href = "http://www.cs.gettysburg.edu/~ilinkin/papers.html">here</a>.
@@ -76,13 +83,17 @@
             <h2>III. Conclusion</h2>
             <p>Besides some of the assignments above, we also made some other cool projects. Check out my <a href="https://github.com/minhvdq?tab=repositories">Github</a> if it might be helpful. Thank you for reading this post!</p>
         </div>
-        <footer>
-          <p>Contact:</p>
-          <div class="contact">
-            <a href="https://www.facebook.com/minh.vdq/"><img src="../image/facebook.png" alt="facebook" /></a>
-            <a href="https://www.instagram.com/minh.vdq/"><img src="../image/inslogo.png" alt="instagram" /></a>
-            <a href="https://github.com/minhvdq"> <img src="../image/gitlogoo.svg" alt="github"/></a>
+        <div class="contact">
+          <p> Contact:</p>
+          <a class = "ctinf" id = "github" href = "https://linkedin.com/in/minh-vu-a0617225a/"  target = _blank><img class="icon" src="../../../image/linkedin.png" /></a>
+          <a class = "ctinf" id = "facebook" href = "https://facebook.com/minhvdq"  target = _blank><img class="icon" src = "../../../image/facebook.png"/></a>
+          <a class = "ctinf" id = "github" href = "https://instagram.com/minhvdq"  target = _blank><img class="icon" src = "../../../image/inslogo.png"/></a>
+          <p id="more">more</p>
+          <p id="less">less</p>
+          <div id="moreInfo">
+            <a class="email" href="mailto:vudimi01@gettysburg.edu">vudimi01@gettysburg.edu</a>
+            <a class= "email" href="https://github.com/minhvdq/" target="_blank">Github</a>
           </div>
-        </footer>
+        </div>
     </body>
 </html>
